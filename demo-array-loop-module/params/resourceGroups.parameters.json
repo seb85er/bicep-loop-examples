@@ -1,0 +1,39 @@
+{
+    "$schema": "resourceGroups.parameters.json",
+    "ukResourceGroups": [
+        {
+            "name": "rsg-prd-001",
+            "location": "uksouth",
+            "tags": {
+                "owner": "sb",
+                "environment": "prd"
+            }
+        },
+        {
+            "name": "rsg-prd-002",
+            "location": "uksouth",
+            "tags": {
+                "owner": "sb",
+                "environment": "prd"
+            }
+        }
+    ],
+    "usResourceGroups": [
+        {
+            "name": "rsg-prd-010",
+            "location": "eastus",
+            "tags": {
+                "owner": "sb",
+                "environment": "prd"
+            }
+        },
+        {
+            "name": "rsg-prd-011",
+            "location": "eastus",
+            "tags": {
+                "owner": "sb",
+                "environment": "prd"
+            }
+        }
+    ]
+}

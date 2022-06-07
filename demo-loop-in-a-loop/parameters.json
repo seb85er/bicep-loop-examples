@@ -1,0 +1,43 @@
+{
+    "$schema": "./schema.json",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "hub_name": {
+        "value": "hub_vnet"
+      },
+      "hub_address_space": {
+          "value": ["10.100.0.0/16"]
+      },
+      "default_subnet": {
+        "value": "default"
+      },
+      "subnet_prefix": {
+          "value": "10.100.1.0/24"
+      },
+      "spoke_vnets": {
+          "value": {
+             "spoke1": {
+                "name": "spoke1",
+                "address_space": ["10.101.0.0/16"],
+                "subnet_name": "spoke1-subnet",
+                "subnet_prefix": "10.101.1.0/24"
+             },
+             "spoke2": {
+                "name": "spoke2",
+                "address_space": ["10.102.0.0/16"],
+                "subnet_name": "spoke2-subnet",
+                "subnet_prefix": "10.102.1.0/24"
+             }
+          }
+      },
+      "allowForwardedTraffic":{
+          "value": false
+      },
+      "allowGatewayTransit":{
+          "value": false
+      },
+      "allowVirtualNetworkAccess":{
+          "value": true
+      }
+    }
+  }

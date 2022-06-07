@@ -1,0 +1,187 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "$schema": {
+        "type": "string"
+      },
+      "contentVersion": {
+        "type": "string"
+      },
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "hub_name": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "hub_address_space": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "default_subnet": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "subnet_prefix": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "spoke_vnets": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "object",
+                "properties": {
+                  "spoke1": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "address_space": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      },
+                      "subnet_name": {
+                        "type": "string"
+                      },
+                      "subnet_prefix": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "address_space",
+                      "subnet_name",
+                      "subnet_prefix"
+                    ]
+                  },
+                  "spoke2": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "address_space": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      },
+                      "subnet_name": {
+                        "type": "string"
+                      },
+                      "subnet_prefix": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "address_space",
+                      "subnet_name",
+                      "subnet_prefix"
+                    ]
+                  }
+                },
+                "required": [
+                  "spoke1",
+                  "spoke2"
+                ]
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "allowForwardedTraffic": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "allowGatewayTransit": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "allowVirtualNetworkAccess": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          }
+        },
+        "required": [
+          "hub_name",
+          "hub_address_space",
+          "default_subnet",
+          "subnet_prefix",
+          "spoke_vnets",
+          "allowForwardedTraffic",
+          "allowGatewayTransit",
+          "allowVirtualNetworkAccess"
+        ]
+      }
+    },
+    "required": [
+      "$schema",
+      "contentVersion",
+      "parameters"
+    ]
+  }
