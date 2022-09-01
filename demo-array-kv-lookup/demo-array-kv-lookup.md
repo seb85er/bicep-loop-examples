@@ -3,7 +3,9 @@
  <font size="2">
 In this example I will be demonstrating looping through an array in the parameters file to create a resource group using a module. 
 I will also be data sourcing a keyvault then referencing a secret within the keyvault for the name of the resource group.
-The purpose of the example is to demonstrate using the keyvault [getSecret function](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/key-vault-parameter?tabs=azure-cli#use-getsecret-function) but also to utilise an index loop to access the relevant keyvault and pass the secret value to the module.
+The purpose of the example is to demonstrate using the keyvault 
+
+[getSecret function](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/key-vault-parameter?tabs=azure-cli#use-getsecret-function) but also to utilise an index loop to access the relevant keyvault and pass the secret value to the module.
 
 - - - -
 
