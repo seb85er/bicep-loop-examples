@@ -1,7 +1,7 @@
 ## **Bicep loop Examples**
 #### Overview
  <font size="2">
-A Collection Bicep loop examples
+A Collection of Bicep loop examples
 
 - - - -
 
