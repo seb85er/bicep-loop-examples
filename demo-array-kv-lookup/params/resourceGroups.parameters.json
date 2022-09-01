@@ -1,6 +1,6 @@
 {
-    "$schema": "resourceGroups.parameters.json",
-    "ukResourceGroups": [
+    "$schema": "resourceGroups.schema.json",
+    "ResourceGroups": [
         {   
             "kvName": "kv-demobicep-001",
             "kvResourceGroupName": "rg-demobicep-001",

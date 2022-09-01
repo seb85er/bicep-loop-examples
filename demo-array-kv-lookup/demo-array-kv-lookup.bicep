@@ -2,7 +2,7 @@
 targetScope = 'subscription'
 
 // reference specific array with parameter file
-var ukResourceGroups = json(loadTextContent('params/resourceGroups.parameters.json')).ukResourceGroups //settting variable for the nested ukResourceGroups array
+var ukResourceGroups = json(loadTextContent('params/resourceGroups.parameters.json')).ResourceGroups //settting variable for the nested ukResourceGroups array
 
 //loop through and datasource key vauilt
 //ensure the keyvault "Azure Resource Manager for template deployment" is enabled
