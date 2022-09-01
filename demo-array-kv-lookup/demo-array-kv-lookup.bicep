@@ -5,8 +5,7 @@ targetScope = 'subscription'
 var ukResourceGroups = json(loadTextContent('params/resourceGroups.parameters.json')).ukResourceGroups //settting variable for the nested ukResourceGroups array
 
 //loop through and datasource key vauilt
-//ensure the keyvault "Azure Resource Manager for template deployment" is enable
-
+//ensure the keyvault "Azure Resource Manager for template deployment" is enabled
 resource kv 'Microsoft.KeyVault/vaults@2019-09-01' existing = [for item in ukResourceGroups: {
   name: item.kvName
   scope: resourceGroup(item.subscriptionId, item.kvResourceGroupName )
