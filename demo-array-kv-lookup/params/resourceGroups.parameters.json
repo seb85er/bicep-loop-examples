@@ -1,0 +1,27 @@
+{
+    "$schema": "resourceGroups.parameters.json",
+    "ukResourceGroups": [
+        {   
+            "kvName": "kv-demobicep-001",
+            "kvResourceGroupName": "rg-demobicep-001",
+            "subscriptionId": "",
+            "location": "uksouth",
+            "tags": {
+                "owner": "sb",
+                "environment": "prd"
+            },
+            "deploymentName": "1"
+        },
+        {
+            "kvName": "kv-demobicep-002",
+            "kvResourceGroupName": "rg-demobicep-002",
+            "subscriptionId": "",
+            "location": "uksouth",
+            "tags": {
+                "owner": "sb",
+                "environment": "prd"
+            },
+            "deploymentName": "2"
+        }
+    ]
+}
