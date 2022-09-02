@@ -10,7 +10,7 @@ A Collection of Bicep loop examples
 [demo-array-indexer-loop](demo-array-indexer-loop/demo-array-indexer-loop.md)
 
 -   array loop with keyvault lookup:
-[demo-array-kv-lookup](demo-array-kv-lookup/demo-array-kv-lookup.md)
+[demo-array-kv-lookup](demo-array-kv-lookup/README.md)
 
 -   array loop:
 [array-loop](demo-array-loop/array-loop.md)
