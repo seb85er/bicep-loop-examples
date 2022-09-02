@@ -1,5 +1,5 @@
 {
-    "$schema": "./schema.json",
+    "$schema": "./resourceGroups.schema.json",
     "contentVersion": "1.0.0.0",
     "parameters": {
       "hub_name": {
