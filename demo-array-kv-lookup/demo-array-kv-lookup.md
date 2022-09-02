@@ -34,4 +34,4 @@ The purpose of the example is to demonstrate using the keyvault
 - Next update deployment.ps1 $SubscriptionId , $TenantId and $Location  variables to your environment details.
 - now run the powershell .\deployment file
 
-[Back to Homepage](../README.md)
+[Home](../README.md)

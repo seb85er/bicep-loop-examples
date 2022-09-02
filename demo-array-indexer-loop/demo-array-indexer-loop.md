@@ -5,4 +5,4 @@ A Collection Bicep loop examples
 
 - - - -
 
-[Back to Homepage](../README.md)
+[Home](../README.md)
