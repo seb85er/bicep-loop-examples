@@ -1,0 +1,148 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "$schema": {
+        "type": "string"
+      },
+      "ukResourceGroups": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "object",
+                "properties": {
+                  "owner": {
+                    "type": "string"
+                  },
+                  "environment": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "owner",
+                  "environment"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "location",
+              "tags"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "object",
+                "properties": {
+                  "owner": {
+                    "type": "string"
+                  },
+                  "environment": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "owner",
+                  "environment"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "location",
+              "tags"
+            ]
+          }
+        ]
+      },
+      "usResourceGroups": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "object",
+                "properties": {
+                  "owner": {
+                    "type": "string"
+                  },
+                  "environment": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "owner",
+                  "environment"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "location",
+              "tags"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "object",
+                "properties": {
+                  "owner": {
+                    "type": "string"
+                  },
+                  "environment": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "owner",
+                  "environment"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "location",
+              "tags"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "$schema",
+      "ukResourceGroups",
+      "usResourceGroups"
+    ]
+  }

@@ -26,7 +26,7 @@ resource hub_vnet 'Microsoft.Network/virtualNetworks@2021-05-01' = {
   }
 }
 
-resource spokes 'Microsoft.Network/virtualNetworks@2021-05-01' = [for vnet in items(spoke_vnets): {//loop through each item in spoke_vnets "items" function returns an array which is consistently ordered if you use the object "spoke_vnets" you receive Loop expected an expression of type "array" but the provided value is of type "object""
+resource spokes 'Microsoft.Network/virtualNetworks@2021-05-01' = [for vnet in items(spoke_vnets): {//loop through each item in spoke_vnets "items" function returns an array which is consistently ordered if you use the object "spoke_vnets" you receive Loop "expected an expression of type "array" but the provided value is of type "object""
   name: vnet.value.name//the value of vnet name for the item you are looping over
   location: location
   properties: {

@@ -1,7 +1,7 @@
 $SubscriptionId = ""
 $TenantId = ""
 $TemplateFile = ".\modules\hubSpoke.bicep"
-$ParameterFile = ".\parameters.json"
+$ParameterFile = ".\params\resourceGroups.parameters.json"
 $Location = "uksouth"
 $ResourceGroupName = "bicep-demo"
 

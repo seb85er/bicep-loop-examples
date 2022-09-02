@@ -7,7 +7,6 @@ param allowForwardedTraffic bool
 param allowGatewayTransit bool
 param allowVirtualNetworkAccess bool
 
-//schema generated using https://www.liquid-technologies.com/online-json-to-schema-converter
 
 module hub_spoke './modules/hubSpoke.bicep' = {
   name: 'hub_and_spoke'
